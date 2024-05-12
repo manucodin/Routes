@@ -17,7 +17,24 @@ struct StopView: View {
     }
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack (alignment: .top) {
+            VStack (alignment: .leading) {
+                Text(viewModel.address)
+                    .font(.title3)
+                    .fontWeight(.bold)
+                Text(viewModel.userName)
+            }
+            Spacer()
+            VStack {
+                Text(viewModel.price)
+                    .font(.title2)
+                PillTextView(
+                    text: viewModel.statusText,
+                    textColor: viewModel.statusTextColor,
+                    backgroundColor: viewModel.statusBackgroundColor
+                )
+            }
+        }
     }
 }
 

@@ -30,9 +30,9 @@
 		54B0904D2BF0C8B800CB3419 /* PresentationSheetModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B0904C2BF0C8B800CB3419 /* PresentationSheetModifier.swift */; };
 		54B090512BF0CAA500CB3419 /* StopInfo+PreviewContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B090502BF0CAA500CB3419 /* StopInfo+PreviewContent.swift */; };
 		54B090572BF0CC4B00CB3419 /* StopsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B090562BF0CC4B00CB3419 /* StopsViewModel.swift */; };
+		54B0905E2BF0DA8600CB3419 /* PillTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B0905D2BF0DA8600CB3419 /* PillTextView.swift */; };
 		54E2EB2A2BF0A19E006363E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54E2EB292BF0A19E006363E9 /* Assets.xcassets */; };
 		54E2EB2C2BF0A1A3006363E9 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 54E2EB2B2BF0A1A3006363E9 /* Localizable.xcstrings */; };
-		54E2EB452BF0A1C8006363E9 /* TripStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E2EB2D2BF0A1C8006363E9 /* TripStatusView.swift */; };
 		54E2EB462BF0A1C8006363E9 /* TripsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E2EB2E2BF0A1C8006363E9 /* TripsView.swift */; };
 		54E2EB472BF0A1C8006363E9 /* TripView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E2EB2F2BF0A1C8006363E9 /* TripView.swift */; };
 		54E2EB482BF0A1C8006363E9 /* TripStatusViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E2EB312BF0A1C8006363E9 /* TripStatusViewModel.swift */; };
@@ -94,9 +94,9 @@
 		54B0904C2BF0C8B800CB3419 /* PresentationSheetModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationSheetModifier.swift; sourceTree = "<group>"; };
 		54B090502BF0CAA500CB3419 /* StopInfo+PreviewContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StopInfo+PreviewContent.swift"; sourceTree = "<group>"; };
 		54B090562BF0CC4B00CB3419 /* StopsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopsViewModel.swift; sourceTree = "<group>"; };
+		54B0905D2BF0DA8600CB3419 /* PillTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PillTextView.swift; sourceTree = "<group>"; };
 		54E2EB292BF0A19E006363E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		54E2EB2B2BF0A1A3006363E9 /* Localizable.xcstrings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
-		54E2EB2D2BF0A1C8006363E9 /* TripStatusView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripStatusView.swift; sourceTree = "<group>"; };
 		54E2EB2E2BF0A1C8006363E9 /* TripsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripsView.swift; sourceTree = "<group>"; };
 		54E2EB2F2BF0A1C8006363E9 /* TripView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripView.swift; sourceTree = "<group>"; };
 		54E2EB312BF0A1C8006363E9 /* TripStatusViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripStatusViewModel.swift; sourceTree = "<group>"; };
@@ -219,6 +219,7 @@
 		544B3C2A2BF0A0200017DE05 /* Routes */ = {
 			isa = PBXGroup;
 			children = (
+				54B0905B2BF0DA6E00CB3419 /* Components */,
 				54B0904B2BF0C8A400CB3419 /* Modifiers */,
 				54B0904A2BF0C89500CB3419 /* Scenes */,
 				54E2EB532BF0A1DF006363E9 /* RoutesApp.swift */,
@@ -394,10 +395,25 @@
 			path = Infraestructure;
 			sourceTree = "<group>";
 		};
+		54B0905B2BF0DA6E00CB3419 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				54B0905C2BF0DA7600CB3419 /* PillTextView */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		54B0905C2BF0DA7600CB3419 /* PillTextView */ = {
+			isa = PBXGroup;
+			children = (
+				54B0905D2BF0DA8600CB3419 /* PillTextView.swift */,
+			);
+			path = PillTextView;
+			sourceTree = "<group>";
+		};
 		54E2EB302BF0A1C8006363E9 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				54E2EB2D2BF0A1C8006363E9 /* TripStatusView.swift */,
 				54E2EB2E2BF0A1C8006363E9 /* TripsView.swift */,
 				54E2EB2F2BF0A1C8006363E9 /* TripView.swift */,
 			);
@@ -684,11 +700,11 @@
 				54E2EB542BF0A1DF006363E9 /* RoutesApp.swift in Sources */,
 				54B0904D2BF0C8B800CB3419 /* PresentationSheetModifier.swift in Sources */,
 				54E2EB502BF0A1C8006363E9 /* TripsDataSource.swift in Sources */,
+				54B0905E2BF0DA8600CB3419 /* PillTextView.swift in Sources */,
 				54B090482BF0C3EF00CB3419 /* StopInfoPoint.swift in Sources */,
 				54E2EB4A2BF0A1C8006363E9 /* TripViewModel.swift in Sources */,
 				54E2EB492BF0A1C8006363E9 /* TripsViewModel.swift in Sources */,
 				54B0903A2BF0BF5300CB3419 /* StopView.swift in Sources */,
-				54E2EB452BF0A1C8006363E9 /* TripStatusView.swift in Sources */,
 				54E2EB4B2BF0A1C8006363E9 /* Destination.swift in Sources */,
 				54449DD62BF0B40800C91764 /* AnnotationView.swift in Sources */,
 				54B0903E2BF0BF7900CB3419 /* StopInfo.swift in Sources */,

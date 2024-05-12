@@ -23,7 +23,11 @@ struct TripView: View {
                 Text(viewModel.originText)
                 Text(viewModel.destinationText)
                 HStack {
-                    TripStatusView(status: viewModel.status)
+                    PillTextView(
+                        text: viewModel.pillStatusViewModel.text,
+                        textColor: viewModel.pillStatusViewModel.textColor,
+                        backgroundColor: viewModel.pillStatusViewModel.backgroundColor
+                    )
                     if let durationText = viewModel.durationText {
                         Text(durationText)
                             .font(.caption)

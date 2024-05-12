@@ -18,7 +18,7 @@ struct RootView: View {
         }
         .sheet(isPresented: $rootVM.showTrips, content: {
             TripsView()
-                .presentationSheet()
+                .presentationSheet([.height(160), .medium])
                 .interactiveDismissDisabled(true)
         })
         .sheet(item: $stopsVM.selectStopInfo) {
@@ -26,7 +26,7 @@ struct RootView: View {
             stopsVM.selectStopInfo = nil
         } content: { stopInfo in
             StopView(stopInfo: stopInfo)
-                .presentationSheet()
+                .presentationSheet([.height(80)])
         }
             
     }

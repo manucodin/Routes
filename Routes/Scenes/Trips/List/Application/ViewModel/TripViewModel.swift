@@ -29,9 +29,11 @@ class TripViewModel {
         return trip.status
     }
     
+    let pillStatusViewModel: TripStatusViewModel
     private let trip: Trip
     
     init(trip: Trip) {
         self.trip = trip
+        self.pillStatusViewModel = TripStatusViewModel(status: trip.status)
     }
 }
