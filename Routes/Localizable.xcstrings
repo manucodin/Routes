@@ -7,9 +7,6 @@
     "accept" : {
 
     },
-    "buy_date" : {
-
-    },
     "cancelled" : {
       "localizations" : {
         "en" : {
@@ -30,6 +27,9 @@
 
     },
     "creteIssue" : {
+
+    },
+    "date" : {
 
     },
     "email" : {
@@ -85,6 +85,9 @@
           }
         }
       }
+    },
+    "invalid_field" : {
+
     },
     "issue_description" : {
 

@@ -80,6 +80,15 @@
           }
         }
       }
+    },
+    "invalid_email" : {
+
+    },
+    "invalid_phone" : {
+
+    },
+    "invalid_text" : {
+
     }
   },
   "version" : "1.0"

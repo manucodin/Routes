@@ -11,11 +11,11 @@ struct Issue {
     var name: String
     var surname: String
     var email: String
-    var phone: String?
+    var phone: String
     var date: Date
     var message: String
     
-    init(name: String = "", surname: String = "", email: String = "", phone: String? = nil, date: Date = Date(), message: String = "") {
+    init(name: String = "", surname: String = "", email: String = "", phone: String = "", date: Date = Date(), message: String = "") {
         self.name = name
         self.surname = surname
         self.email = email

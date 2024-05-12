@@ -36,6 +36,8 @@ struct IssueView: View {
                     })
                     LabeledContent(content: {
                         CustomRoundedTextField(text: String(localized: "email (required )"), value: $issueVM.issue.email)
+                            .keyboardType(.emailAddress)
+                            .textInputAutocapitalization(.never)
                     }, label: {
                         HStack {
                             Image(systemName: "list.bullet.clipboard")
@@ -43,7 +45,8 @@ struct IssueView: View {
                         }
                     })
                     LabeledContent(content: {
-                        CustomRoundedTextField(text: String(localized: "phone"), value: $issueVM.issue.email)
+                        CustomRoundedTextField(text: String(localized: "phone"), value: $issueVM.issue.phone)
+                            .keyboardType(.phonePad)
                     }, label: {
                         HStack {
                             Image(systemName: "list.bullet.clipboard")
@@ -51,40 +54,32 @@ struct IssueView: View {
                         }
                     })
                     LabeledContent(content: {
-                        DatePicker("", selection: $issueVM.issue.date, displayedComponents: .date)
+                        DatePicker("", selection: $issueVM.issue.date)
                     }, label: {
                         HStack {
                             Image(systemName: "calendar")
                             Text("date")
                         }
                     })
-                    LabeledContent(content: {
-                        DatePicker("", selection: $issueVM.issue.date, displayedComponents: .hourAndMinute)
-                    }, label: {
-                        HStack {
-                            Image(systemName: "clock")
-                            Text("hour")
-                        }
-                    })
                 }
-                Section {
-                    VStack (alignment: .leading) {
-                        Text("issue_description").fontWeight(.bold)
-                        TextField("issue_description", text: $issueVM.issue.message, axis: .vertical)
-                            .textArea()
-                    }
+            }
+            Section {
+                VStack (alignment: .leading) {
+                    Text("issue_description").fontWeight(.bold)
+                    TextField("issue_description", text: $issueVM.issue.message, axis: .vertical)
+                        .textArea()
                 }
             }
         }
         .navigationTitle("creteIssue")
         .navigationBarTitleDisplayMode(.inline)
-        .listSectionSpacing(8)
+        .listSectionSpacing(12)
         .padding(.horizontal, -10)
         .padding(.top, -22)
         .toolbar(content: {
             ToolbarItem(placement: .topBarTrailing) {
                 Button("send") {
-                    
+                    issueVM.sendIssue()
                 }.disabled(issueVM.requiredFieldsCompleted == false)
             }
         })
