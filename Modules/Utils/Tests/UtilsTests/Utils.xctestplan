@@ -1,0 +1,32 @@
+{
+  "configurations" : [
+    {
+      "id" : "BB81F2DA-B373-4B94-AF86-96D32975BAA0",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : {
+      "targets" : [
+        {
+          "containerPath" : "container:",
+          "identifier" : "Utils",
+          "name" : "Utils"
+        }
+      ]
+    }
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:",
+        "identifier" : "UtilsTests",
+        "name" : "UtilsTests"
+      }
+    }
+  ],
+  "version" : 1
+}
