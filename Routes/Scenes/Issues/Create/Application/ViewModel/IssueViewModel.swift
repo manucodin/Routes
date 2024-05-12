@@ -88,5 +88,6 @@ class IssueViewModel: ObservableObject {
     
     private func save(_ modelContext: ModelContext) throws {
         try issueDataSource.save(issue, modelContext: modelContext)
+        saved.toggle()
     }
 }

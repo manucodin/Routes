@@ -9,6 +9,8 @@ import SwiftUI
 
 struct IssueView: View {
     @Environment(\.modelContext) var modelContext
+    @Environment(\.dismiss) var dismiss
+
     @StateObject var issueVM = IssueViewModel()
     
     var body: some View {
@@ -86,6 +88,11 @@ struct IssueView: View {
         })
         .alert(issueVM.message, isPresented: $issueVM.showAlert) {
             Button("accept", role: .cancel) {}
+        }
+        .alert("Issue sended", isPresented: $issueVM.saved) {
+            Button("accept") {
+                dismiss()
+            }
         }
     }
 }

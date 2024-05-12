@@ -164,6 +164,9 @@
         }
       }
     },
+    "Issue sended" : {
+
+    },
     "issue_description" : {
       "localizations" : {
         "en" : {
