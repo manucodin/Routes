@@ -21,13 +21,15 @@
 		544B3C472BF0A0210017DE05 /* RoutesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544B3C462BF0A0210017DE05 /* RoutesUITests.swift */; };
 		544B3C492BF0A0210017DE05 /* RoutesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544B3C482BF0A0210017DE05 /* RoutesUITestsLaunchTests.swift */; };
 		54B0903A2BF0BF5300CB3419 /* StopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B090392BF0BF5300CB3419 /* StopView.swift */; };
-		54B0903C2BF0BF5F00CB3419 /* StopViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B0903B2BF0BF5F00CB3419 /* StopViewModel.swift */; };
+		54B0903C2BF0BF5F00CB3419 /* StopInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B0903B2BF0BF5F00CB3419 /* StopInfoViewModel.swift */; };
 		54B0903E2BF0BF7900CB3419 /* StopInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B0903D2BF0BF7900CB3419 /* StopInfo.swift */; };
-		54B090422BF0C16500CB3419 /* StopInfoDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B090412BF0C16500CB3419 /* StopInfoDataSource.swift */; };
-		54B090442BF0C17400CB3419 /* StopInfoDataSourceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B090432BF0C17400CB3419 /* StopInfoDataSourceImpl.swift */; };
+		54B090422BF0C16500CB3419 /* StopsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B090412BF0C16500CB3419 /* StopsDataSource.swift */; };
+		54B090442BF0C17400CB3419 /* StopsDataSourceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B090432BF0C17400CB3419 /* StopsDataSourceImpl.swift */; };
 		54B090462BF0C1C400CB3419 /* StopInfoDTOMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B090452BF0C1C400CB3419 /* StopInfoDTOMapper.swift */; };
 		54B090482BF0C3EF00CB3419 /* StopInfoPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B090472BF0C3EF00CB3419 /* StopInfoPoint.swift */; };
 		54B0904D2BF0C8B800CB3419 /* PresentationSheetModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B0904C2BF0C8B800CB3419 /* PresentationSheetModifier.swift */; };
+		54B090512BF0CAA500CB3419 /* StopInfo+PreviewContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B090502BF0CAA500CB3419 /* StopInfo+PreviewContent.swift */; };
+		54B090572BF0CC4B00CB3419 /* StopsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B090562BF0CC4B00CB3419 /* StopsViewModel.swift */; };
 		54E2EB2A2BF0A19E006363E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54E2EB292BF0A19E006363E9 /* Assets.xcassets */; };
 		54E2EB2C2BF0A1A3006363E9 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 54E2EB2B2BF0A1A3006363E9 /* Localizable.xcstrings */; };
 		54E2EB452BF0A1C8006363E9 /* TripStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E2EB2D2BF0A1C8006363E9 /* TripStatusView.swift */; };
@@ -83,13 +85,15 @@
 		544B3C462BF0A0210017DE05 /* RoutesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutesUITests.swift; sourceTree = "<group>"; };
 		544B3C482BF0A0210017DE05 /* RoutesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutesUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		54B090392BF0BF5300CB3419 /* StopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopView.swift; sourceTree = "<group>"; };
-		54B0903B2BF0BF5F00CB3419 /* StopViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopViewModel.swift; sourceTree = "<group>"; };
+		54B0903B2BF0BF5F00CB3419 /* StopInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopInfoViewModel.swift; sourceTree = "<group>"; };
 		54B0903D2BF0BF7900CB3419 /* StopInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopInfo.swift; sourceTree = "<group>"; };
-		54B090412BF0C16500CB3419 /* StopInfoDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopInfoDataSource.swift; sourceTree = "<group>"; };
-		54B090432BF0C17400CB3419 /* StopInfoDataSourceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopInfoDataSourceImpl.swift; sourceTree = "<group>"; };
+		54B090412BF0C16500CB3419 /* StopsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopsDataSource.swift; sourceTree = "<group>"; };
+		54B090432BF0C17400CB3419 /* StopsDataSourceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopsDataSourceImpl.swift; sourceTree = "<group>"; };
 		54B090452BF0C1C400CB3419 /* StopInfoDTOMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopInfoDTOMapper.swift; sourceTree = "<group>"; };
 		54B090472BF0C3EF00CB3419 /* StopInfoPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopInfoPoint.swift; sourceTree = "<group>"; };
 		54B0904C2BF0C8B800CB3419 /* PresentationSheetModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationSheetModifier.swift; sourceTree = "<group>"; };
+		54B090502BF0CAA500CB3419 /* StopInfo+PreviewContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StopInfo+PreviewContent.swift"; sourceTree = "<group>"; };
+		54B090562BF0CC4B00CB3419 /* StopsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopsViewModel.swift; sourceTree = "<group>"; };
 		54E2EB292BF0A19E006363E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		54E2EB2B2BF0A1A3006363E9 /* Localizable.xcstrings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		54E2EB2D2BF0A1C8006363E9 /* TripStatusView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripStatusView.swift; sourceTree = "<group>"; };
@@ -228,6 +232,7 @@
 		544B3C312BF0A0210017DE05 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				54B0904E2BF0CA9400CB3419 /* Stop */,
 				54449DCF2BF0AA1000C91764 /* Trips */,
 				544B3C322BF0A0210017DE05 /* Preview Assets.xcassets */,
 			);
@@ -254,9 +259,8 @@
 		54B090332BF0BE6D00CB3419 /* Stop */ = {
 			isa = PBXGroup;
 			children = (
-				54B090352BF0BE8100CB3419 /* Domain */,
-				54B090342BF0BE7900CB3419 /* Application */,
-				54B090362BF0BE8600CB3419 /* Infraestructure */,
+				54B090532BF0CC1D00CB3419 /* List */,
+				54B090522BF0CC0300CB3419 /* Detail */,
 			);
 			path = Stop;
 			sourceTree = "<group>";
@@ -279,15 +283,6 @@
 			path = Domain;
 			sourceTree = "<group>";
 		};
-		54B090362BF0BE8600CB3419 /* Infraestructure */ = {
-			isa = PBXGroup;
-			children = (
-				54B090402BF0C15600CB3419 /* Mapper */,
-				54B0903F2BF0C14E00CB3419 /* DataSource */,
-			);
-			path = Infraestructure;
-			sourceTree = "<group>";
-		};
 		54B090372BF0BE9C00CB3419 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -299,7 +294,7 @@
 		54B090382BF0BEA100CB3419 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				54B0903B2BF0BF5F00CB3419 /* StopViewModel.swift */,
+				54B0903B2BF0BF5F00CB3419 /* StopInfoViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -307,8 +302,8 @@
 		54B0903F2BF0C14E00CB3419 /* DataSource */ = {
 			isa = PBXGroup;
 			children = (
-				54B090412BF0C16500CB3419 /* StopInfoDataSource.swift */,
-				54B090432BF0C17400CB3419 /* StopInfoDataSourceImpl.swift */,
+				54B090412BF0C16500CB3419 /* StopsDataSource.swift */,
+				54B090432BF0C17400CB3419 /* StopsDataSourceImpl.swift */,
 			);
 			path = DataSource;
 			sourceTree = "<group>";
@@ -338,6 +333,65 @@
 				54B0904C2BF0C8B800CB3419 /* PresentationSheetModifier.swift */,
 			);
 			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		54B0904E2BF0CA9400CB3419 /* Stop */ = {
+			isa = PBXGroup;
+			children = (
+				54B0904F2BF0CA9A00CB3419 /* Domain */,
+			);
+			path = Stop;
+			sourceTree = "<group>";
+		};
+		54B0904F2BF0CA9A00CB3419 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				54B090502BF0CAA500CB3419 /* StopInfo+PreviewContent.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		54B090522BF0CC0300CB3419 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				54B090352BF0BE8100CB3419 /* Domain */,
+				54B090342BF0BE7900CB3419 /* Application */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		54B090532BF0CC1D00CB3419 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				54B090542BF0CC2400CB3419 /* Application */,
+				54B090582BF0CC6E00CB3419 /* Infraestructure */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		54B090542BF0CC2400CB3419 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				54B090552BF0CC3E00CB3419 /* ViewModel */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		54B090552BF0CC3E00CB3419 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				54B090562BF0CC4B00CB3419 /* StopsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		54B090582BF0CC6E00CB3419 /* Infraestructure */ = {
+			isa = PBXGroup;
+			children = (
+				54B090402BF0C15600CB3419 /* Mapper */,
+				54B0903F2BF0C14E00CB3419 /* DataSource */,
+			);
+			path = Infraestructure;
 			sourceTree = "<group>";
 		};
 		54E2EB302BF0A1C8006363E9 /* View */ = {
@@ -625,7 +679,7 @@
 				54E2EB4E2BF0A1C8006363E9 /* Trip.swift in Sources */,
 				54449DCE2BF0A2AE00C91764 /* RootViewModel.swift in Sources */,
 				54E2EB602BF0A1EB006363E9 /* MapView.swift in Sources */,
-				54B0903C2BF0BF5F00CB3419 /* StopViewModel.swift in Sources */,
+				54B0903C2BF0BF5F00CB3419 /* StopInfoViewModel.swift in Sources */,
 				54449DC82BF0A22D00C91764 /* RootView.swift in Sources */,
 				54E2EB542BF0A1DF006363E9 /* RoutesApp.swift in Sources */,
 				54B0904D2BF0C8B800CB3419 /* PresentationSheetModifier.swift in Sources */,
@@ -638,14 +692,16 @@
 				54E2EB4B2BF0A1C8006363E9 /* Destination.swift in Sources */,
 				54449DD62BF0B40800C91764 /* AnnotationView.swift in Sources */,
 				54B0903E2BF0BF7900CB3419 /* StopInfo.swift in Sources */,
+				54B090572BF0CC4B00CB3419 /* StopsViewModel.swift in Sources */,
+				54B090512BF0CAA500CB3419 /* StopInfo+PreviewContent.swift in Sources */,
 				54E2EB4C2BF0A1C8006363E9 /* Point.swift in Sources */,
-				54B090422BF0C16500CB3419 /* StopInfoDataSource.swift in Sources */,
+				54B090422BF0C16500CB3419 /* StopsDataSource.swift in Sources */,
 				54E2EB4D2BF0A1C8006363E9 /* Stop.swift in Sources */,
 				54E2EB472BF0A1C8006363E9 /* TripView.swift in Sources */,
 				54B090462BF0C1C400CB3419 /* StopInfoDTOMapper.swift in Sources */,
 				54449DD22BF0AA2500C91764 /* Trips+PreviewContent.swift in Sources */,
 				54E2EB462BF0A1C8006363E9 /* TripsView.swift in Sources */,
-				54B090442BF0C17400CB3419 /* StopInfoDataSourceImpl.swift in Sources */,
+				54B090442BF0C17400CB3419 /* StopsDataSourceImpl.swift in Sources */,
 				54E2EB4F2BF0A1C8006363E9 /* TripStatus.swift in Sources */,
 				54E2EB612BF0A1EB006363E9 /* MapViewModel.swift in Sources */,
 				54E2EB482BF0A1C8006363E9 /* TripStatusViewModel.swift in Sources */,

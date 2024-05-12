@@ -7,7 +7,11 @@
 
 import Foundation
 
-struct StopInfo {
+struct StopInfo: Identifiable, Equatable {
+    var id: String {
+        return "\(tripId)"
+    }
+    
     let stopTime: Date
     let paid: Bool
     let address: String

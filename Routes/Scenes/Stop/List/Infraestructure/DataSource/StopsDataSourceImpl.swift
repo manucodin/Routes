@@ -8,7 +8,7 @@
 import Foundation
 import Network
 
-class StopInfoDataSourceImpl: StopInfoDataSource {
+class StopsDataSourceImpl: StopsDataSource {
     
     private let stopsInfoAPIClient: StopsInfoClient
     
@@ -16,7 +16,7 @@ class StopInfoDataSourceImpl: StopInfoDataSource {
         self.stopsInfoAPIClient = stopsInfoAPIClient
     }
     
-    func obtainStopInfo() async throws -> StopInfo? {
+    func obtainStopInfo(id: Int) async throws -> StopInfo? {
         return StopInfoDTOMapper.map(try await stopsInfoAPIClient.obtainStopInfo())
     }
 }

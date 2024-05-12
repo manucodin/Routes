@@ -7,6 +7,6 @@
 
 import Foundation
 
-protocol StopInfoDataSource {
-    func obtainStopInfo() async throws -> StopInfo?
+protocol StopsDataSource {
+    func obtainStopInfo(id: Int) async throws -> StopInfo?
 }

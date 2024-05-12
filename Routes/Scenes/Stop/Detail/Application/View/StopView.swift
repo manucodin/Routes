@@ -9,20 +9,19 @@ import SwiftUI
 
 struct StopView: View {
     @EnvironmentObject var rootVM: RootViewModel
-    @StateObject var stopVM = StopViewModel()
+
+    let viewModel: StopInfoViewModel
+    
+    init(stopInfo: StopInfo) {
+        self.viewModel = StopInfoViewModel(stopInfo: stopInfo)
+    }
     
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-            .task {
-                stopVM.obtainStopInfo()
-            }
-            .onDisappear {
-                rootVM.selectedStop = nil
-            }
     }
 }
 
 #Preview {
-    StopView()
+    StopView(stopInfo: .test)
         .environmentObject(RootViewModel())
 }

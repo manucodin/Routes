@@ -14,6 +14,8 @@ struct MapView: View {
     
     @State private var position = MapCameraPosition.automatic
     
+    var tapOnStop: (Stop) -> Void
+    
     var body: some View {
         Map(position: $mapVM.cameraPosition) {
             MapPolyline(coordinates: mapVM.route)
@@ -35,7 +37,7 @@ struct MapView: View {
                         AnnotationView(icon: "mappin").onTapGesture {
                             withAnimation {
                                 mapVM.selectedPoint = stop.point
-                                rootVM.selectedStop = stop
+                                tapOnStop(stop)
                             }
                         }
                     }
@@ -61,7 +63,7 @@ struct MapView: View {
 }
 
 #Preview {
-    MapView()
+    MapView(tapOnStop: { _ in })
         .environmentObject(RootViewModel())
 }
 
