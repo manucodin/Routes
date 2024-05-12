@@ -22,7 +22,9 @@ struct MapView: View {
             if let start = mapVM.selectedTrip?.origin {
                 Annotation(start.address, coordinate: start.point.coordinates) {
                     AnnotationView(icon: "house.fill").onTapGesture {
-                        mapVM.selectedPoint = start.point
+                        withAnimation {
+                            mapVM.selectedPoint = start.point
+                        }
                     }
                 }
             }
@@ -31,7 +33,9 @@ struct MapView: View {
                 ForEach(stops, id: \.self) { stop in
                     Annotation("\(stop.id)", coordinate: stop.point.coordinates) {
                         AnnotationView(icon: "mappin").onTapGesture {
-                            mapVM.selectedPoint = stop.point
+                            withAnimation {
+                                mapVM.selectedPoint = stop.point
+                            }
                         }
                     }
                 }
@@ -40,13 +44,17 @@ struct MapView: View {
             if let destination = mapVM.selectedTrip?.destination {
                 Annotation(destination.address, coordinate: destination.point.coordinates) {
                     AnnotationView(icon: "flag.checkered").onTapGesture {
-                        mapVM.selectedPoint = destination.point
+                        withAnimation {
+                            mapVM.selectedPoint = destination.point
+                        }
                     }
                 }
             }
         }
         .onChange(of: rootVM.selectedTrip) { _, newValue in
-            mapVM.selectedTrip = newValue
+            withAnimation {
+                mapVM.selectedTrip = newValue
+            }
         }
     }
 }
