@@ -65,6 +65,9 @@
         }
       }
     },
+    "Hello, World!" : {
+
+    },
     "ongoing" : {
       "localizations" : {
         "en" : {

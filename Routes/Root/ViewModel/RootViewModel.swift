@@ -13,6 +13,7 @@ class RootViewModel: ObservableObject {
     @Published var selectedStop: Stop?
     
     @Published var showTrips: Bool = true
+    @Published var showStop: Bool = false
     
     private var cancellables: Set<AnyCancellable> = []
     
@@ -20,6 +21,7 @@ class RootViewModel: ObservableObject {
         $selectedStop
             .sink { [weak self] selectedStop in
                 self?.showTrips = selectedStop == nil
+                self?.showStop = selectedStop != nil
             }
             .store(in: &cancellables)
     }

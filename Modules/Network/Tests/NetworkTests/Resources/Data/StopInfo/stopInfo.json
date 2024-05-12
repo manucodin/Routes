@@ -1,0 +1,12 @@
+{
+    "stopTime": "2018-12-18T09:00:00.000Z",
+    "paid": true,
+    "address": "Ramblas, Barcelona",
+    "tripId": 1,
+    "userName": "Manuel Gomez",
+    "point": {
+        "_latitude": 41.37653,
+        "_longitude": 2.17924
+    },
+    "price": 1.5
+}

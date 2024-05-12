@@ -21,12 +21,12 @@ final class TripsViewModel: ObservableObject {
             do {
                 self.trips = try await dataSource.obtainTrips()
             } catch let error {
-                handleError(error: error)
+                handleError(error)
             }
         }
     }
     
-    private func handleError(error: Error) {
+    private func handleError(_ error: Error) {
         debugPrint(error)
     }
 }

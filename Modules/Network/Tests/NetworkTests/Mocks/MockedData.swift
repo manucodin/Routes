@@ -2,17 +2,13 @@
 //  MockedData.swift
 //
 //
-//  Created by Manuel Rodriguez Sebastian on 11/5/24.
+//  Created by Manuel Rodriguez Sebastian on 12/5/24.
 //
 
 import Foundation
 
-public final class MockedData {
-    public static func tripListJSON() -> Data {
-        return readDataFromFile(fileName: "trip_list")!
-    }
-    
-    private static func readDataFromFile(fileName: String) -> Data? {
+class MockedData {
+    internal static func readDataFromFile(fileName: String) -> Data? {
         guard let path = Bundle.module.path(forResource: fileName, ofType: "json") else { return nil }
         
         do {

@@ -22,6 +22,14 @@ struct RootView: View {
                     )
                     
             })
+            .sheet(isPresented: $rootVM.showStop, content: {
+                StopView()
+                    .presentationDragIndicator(.visible)
+                    .presentationDetents([.height(160), .medium])
+                    .presentationBackgroundInteraction(
+                        .enabled(upThrough: .medium)
+                    )
+            })
     }
 }
 
