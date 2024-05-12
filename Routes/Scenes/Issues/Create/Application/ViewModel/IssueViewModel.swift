@@ -8,6 +8,7 @@
 import Foundation
 import Combine
 import Utils
+import SwiftData
 
 class IssueViewModel: ObservableObject {
     @Published var issue = Issue()
@@ -26,10 +27,16 @@ class IssueViewModel: ObservableObject {
         return true
     }
     
-    func sendIssue() {
+    private let issueDataSource: IssuesDataSource
+    
+    init(issueDataSource: IssuesDataSource = IssuesDataSourceImpl()) {
+        self.issueDataSource = issueDataSource
+    }
+    
+    func sendIssue(_ modelContext: ModelContext) {
         do {
             try validate()
-            try save()
+            try save(modelContext)
         } catch let error as IssueError {
             showErrorMessage(error.errorDescription ?? error.localizedDescription)
         } catch let error {
@@ -79,7 +86,7 @@ class IssueViewModel: ObservableObject {
         return IssueError.fieldError(field: String(localized: "phone"), message: error.errorDescription)
     }
     
-    private func save() throws {
-        debugPrint("Save into local")
+    private func save(_ modelContext: ModelContext) throws {
+        try issueDataSource.save(issue, modelContext: modelContext)
     }
 }

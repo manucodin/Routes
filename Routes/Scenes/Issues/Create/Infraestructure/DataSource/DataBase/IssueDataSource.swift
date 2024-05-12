@@ -6,7 +6,8 @@
 //
 
 import Foundation
+import SwiftData
 
 protocol IssuesDataSource {
-    func save(_ issue: Issue) throws
+    func save(_ issue: Issue, modelContext: ModelContext) throws
 }

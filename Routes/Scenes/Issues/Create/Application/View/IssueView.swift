@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct IssueView: View {
+    @Environment(\.modelContext) var modelContext
     @StateObject var issueVM = IssueViewModel()
     
     var body: some View {
@@ -79,7 +80,7 @@ struct IssueView: View {
         .toolbar(content: {
             ToolbarItem(placement: .topBarTrailing) {
                 Button("send") {
-                    issueVM.sendIssue()
+                    issueVM.sendIssue(modelContext)
                 }.disabled(issueVM.requiredFieldsCompleted == false)
             }
         })

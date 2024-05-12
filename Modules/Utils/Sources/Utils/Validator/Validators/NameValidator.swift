@@ -12,7 +12,7 @@ public class NameValidator: Validator {
     public init() {}
     
     public var regex: String {
-        return #"^[a-zA-Z\s]*$"#
+        return #"^[a-zeáéíóúA-ZÁÉÍÓÚ\s]*$"#
     }
     
     public func validate(_ input: String) -> ValidatorError? {
