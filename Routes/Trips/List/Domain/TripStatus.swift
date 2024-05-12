@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum TripStatus: String, Equatable {
+enum TripStatus: String, Hashable {
     case ongoing
     case scheduled
     case finalized

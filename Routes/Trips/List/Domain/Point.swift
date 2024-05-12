@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Point: Equatable {
+struct Point: Hashable {
     let latitude: Double
     let longitude: Double
 }

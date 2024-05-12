@@ -9,8 +9,8 @@ import SwiftUI
 import MapKit
 
 struct MapView: View {
+    @EnvironmentObject var rootVM: RootViewModel
     @StateObject var viewModel = MapViewModel()
-    @Binding var selectedTrip: Trip?
     
     @State private var cameraBounds: MapCameraBounds = .init(centerCoordinateBounds: .world)
     
@@ -19,16 +19,13 @@ struct MapView: View {
             MapPolyline(coordinates: viewModel.route)
                 .stroke(.route, lineWidth: 5)
         }
-        .onChange(of: selectedTrip) { oldValue, newValue in
+        .onChange(of: rootVM.selectedTrip) { _, newValue in
             viewModel.selectedTrip = newValue
-        }
-        .onChange(of: viewModel.route) { _, _ in
-            cameraBounds = MapCameraBounds(centerCoordinateBounds: viewModel.boundingRect)
         }
     }
 }
 
 #Preview {
-    MapView(selectedTrip: .constant(nil))
+    MapView()
 }
 

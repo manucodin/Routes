@@ -9,7 +9,7 @@ import Foundation
 import Network
 import Utils
 
-class TripMapper {
+class TripDTOMapper {
     static func map(_ dto: TripDTO) -> Trip? {
         guard let origin = mapDestinationModel(dto.origin) else { return nil }
         guard let destination = mapDestinationModel(dto.destination) else { return nil }

@@ -11,9 +11,9 @@ struct RootView: View {
     @EnvironmentObject var rootVM: RootViewModel
         
     var body: some View {
-        MapView(selectedTrip: $rootVM.selectedTrip)
+        MapView()
             .sheet(isPresented: .constant(true), content: {
-                TripsView(selectedTrip: $rootVM.selectedTrip)
+                TripsView()
                     .interactiveDismissDisabled(true)
                     .presentationDragIndicator(.visible)
                     .presentationDetents([.height(160), .medium])

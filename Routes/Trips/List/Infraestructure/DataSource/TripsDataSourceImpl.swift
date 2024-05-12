@@ -17,6 +17,6 @@ class TripsDataSourceImpl: TripsDataSource {
     }
     
     func obtainTrips() async throws -> [Trip] {
-        return try await tripsAPIClient.obtainTrips().compactMap({ TripMapper.map($0) })
+        return try await tripsAPIClient.obtainTrips().compactMap({ TripDTOMapper.map($0) })
     }
 }

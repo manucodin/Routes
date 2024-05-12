@@ -1,27 +1,11 @@
 //
-//  Trip.swift
-//  
+//  Trips+PreviewContent.swift
+//  Routes
 //
-//  Created by Manuel Rodriguez Sebastian on 10/5/24.
+//  Created by Manuel Rodriguez Sebastian on 12/5/24.
 //
 
 import Foundation
-
-public struct Trip: Identifiable, Equatable {
-    public var id: Int {
-        return driverName.hashValue
-    }
-    
-    let driverName: String
-    let status: TripStatus
-    let route: String
-    let startTime: Date
-    let origin: Destination
-    let description: String
-    let destination: Destination
-    let stops: [Stop]
-    let endTime: Date
-}
 
 extension Trip {
     static var test: Trip {

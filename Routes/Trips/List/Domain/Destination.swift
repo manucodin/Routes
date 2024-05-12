@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Destination: Equatable {
+struct Destination: Hashable {
     let point: Point
     let address: String
 }

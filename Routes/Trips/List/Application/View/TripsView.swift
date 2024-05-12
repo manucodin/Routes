@@ -8,12 +8,8 @@
 import SwiftUI
 
 public struct TripsView: View {
-    @Binding var selectedTrip: Trip?
-    @StateObject var viewModel = TripsViewModel()
-    
-    public init(selectedTrip: Binding<Trip?>) {
-        self._selectedTrip = selectedTrip
-    }
+    @EnvironmentObject var rootVM: RootViewModel
+    @StateObject var tripsVM = TripsViewModel()
     
     public var body: some View {
         ZStack {
@@ -22,9 +18,9 @@ public struct TripsView: View {
                     Text("Routes")
                         .font(.title2)
                         .fontWeight(.semibold)
-                    ForEach(viewModel.trips) { trip in
-                        TripView(trip: trip, isSelected: selectedTrip == trip).onTapGesture {
-                            self.selectedTrip = trip
+                    ForEach(tripsVM.trips, id: \.self) { trip in
+                        TripView(trip: trip, isSelected: rootVM.selectedTrip == trip).onTapGesture {
+                            rootVM.selectedTrip = trip
                         }
                     }
                 }
@@ -36,11 +32,11 @@ public struct TripsView: View {
         .background(Color.gray.opacity(0.1))
         .ignoresSafeArea()
         .task {
-            viewModel.obtainTrips()
+            tripsVM.obtainTrips()
         }
     }
 }
 
 #Preview {
-    TripsView(selectedTrip: .constant(nil))
+    TripsView()
 }

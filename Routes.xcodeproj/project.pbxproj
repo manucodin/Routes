@@ -11,6 +11,7 @@
 		54449DC82BF0A22D00C91764 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54449DC52BF0A22D00C91764 /* RootView.swift */; };
 		54449DCB2BF0A27200C91764 /* Polyline in Frameworks */ = {isa = PBXBuildFile; productRef = 54449DCA2BF0A27200C91764 /* Polyline */; };
 		54449DCE2BF0A2AE00C91764 /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54449DCD2BF0A2AE00C91764 /* RootViewModel.swift */; };
+		54449DD22BF0AA2500C91764 /* Trips+PreviewContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54449DD12BF0AA2500C91764 /* Trips+PreviewContent.swift */; };
 		544772962BF0A15E00E2385F /* Network in Frameworks */ = {isa = PBXBuildFile; productRef = 544772952BF0A15E00E2385F /* Network */; };
 		5447729A2BF0A16F00E2385F /* Network in Resources */ = {isa = PBXBuildFile; fileRef = 544772972BF0A16F00E2385F /* Network */; };
 		5447729B2BF0A16F00E2385F /* Utils in Resources */ = {isa = PBXBuildFile; fileRef = 544772982BF0A16F00E2385F /* Utils */; };
@@ -33,7 +34,7 @@
 		54E2EB4F2BF0A1C8006363E9 /* TripStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E2EB3A2BF0A1C8006363E9 /* TripStatus.swift */; };
 		54E2EB502BF0A1C8006363E9 /* TripsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E2EB3D2BF0A1C8006363E9 /* TripsDataSource.swift */; };
 		54E2EB512BF0A1C8006363E9 /* TripsDataSourceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E2EB3E2BF0A1C8006363E9 /* TripsDataSourceImpl.swift */; };
-		54E2EB522BF0A1C8006363E9 /* TripMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E2EB402BF0A1C8006363E9 /* TripMapper.swift */; };
+		54E2EB522BF0A1C8006363E9 /* TripDTOMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E2EB402BF0A1C8006363E9 /* TripDTOMapper.swift */; };
 		54E2EB542BF0A1DF006363E9 /* RoutesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E2EB532BF0A1DF006363E9 /* RoutesApp.swift */; };
 		54E2EB602BF0A1EB006363E9 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E2EB552BF0A1EB006363E9 /* MapView.swift */; };
 		54E2EB612BF0A1EB006363E9 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E2EB572BF0A1EB006363E9 /* MapViewModel.swift */; };
@@ -61,6 +62,7 @@
 /* Begin PBXFileReference section */
 		54449DC52BF0A22D00C91764 /* RootView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		54449DCD2BF0A2AE00C91764 /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
+		54449DD12BF0AA2500C91764 /* Trips+PreviewContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Trips+PreviewContent.swift"; sourceTree = "<group>"; };
 		544772972BF0A16F00E2385F /* Network */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Network; sourceTree = "<group>"; };
 		544772982BF0A16F00E2385F /* Utils */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Utils; sourceTree = "<group>"; };
 		544B3C282BF0A0200017DE05 /* Routes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Routes.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,7 +87,7 @@
 		54E2EB3A2BF0A1C8006363E9 /* TripStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripStatus.swift; sourceTree = "<group>"; };
 		54E2EB3D2BF0A1C8006363E9 /* TripsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripsDataSource.swift; sourceTree = "<group>"; };
 		54E2EB3E2BF0A1C8006363E9 /* TripsDataSourceImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripsDataSourceImpl.swift; sourceTree = "<group>"; };
-		54E2EB402BF0A1C8006363E9 /* TripMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripMapper.swift; sourceTree = "<group>"; };
+		54E2EB402BF0A1C8006363E9 /* TripDTOMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripDTOMapper.swift; sourceTree = "<group>"; };
 		54E2EB532BF0A1DF006363E9 /* RoutesApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutesApp.swift; sourceTree = "<group>"; };
 		54E2EB552BF0A1EB006363E9 /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		54E2EB572BF0A1EB006363E9 /* MapViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
@@ -146,6 +148,22 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		54449DCF2BF0AA1000C91764 /* Trips */ = {
+			isa = PBXGroup;
+			children = (
+				54449DD02BF0AA1500C91764 /* Domain */,
+			);
+			path = Trips;
+			sourceTree = "<group>";
+		};
+		54449DD02BF0AA1500C91764 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				54449DD12BF0AA2500C91764 /* Trips+PreviewContent.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
 		544772992BF0A16F00E2385F /* Modules */ = {
 			isa = PBXGroup;
 			children = (
@@ -193,6 +211,7 @@
 		544B3C312BF0A0210017DE05 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				54449DCF2BF0AA1000C91764 /* Trips */,
 				544B3C322BF0A0210017DE05 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
@@ -244,7 +263,7 @@
 			path = Application;
 			sourceTree = "<group>";
 		};
-		54E2EB3B2BF0A1C8006363E9 /* Models */ = {
+		54E2EB3C2BF0A1C8006363E9 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
 				54E2EB362BF0A1C8006363E9 /* Destination.swift */,
@@ -252,14 +271,6 @@
 				54E2EB382BF0A1C8006363E9 /* Stop.swift */,
 				54E2EB392BF0A1C8006363E9 /* Trip.swift */,
 				54E2EB3A2BF0A1C8006363E9 /* TripStatus.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		54E2EB3C2BF0A1C8006363E9 /* Domain */ = {
-			isa = PBXGroup;
-			children = (
-				54E2EB3B2BF0A1C8006363E9 /* Models */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -276,7 +287,7 @@
 		54E2EB412BF0A1C8006363E9 /* Mapper */ = {
 			isa = PBXGroup;
 			children = (
-				54E2EB402BF0A1C8006363E9 /* TripMapper.swift */,
+				54E2EB402BF0A1C8006363E9 /* TripDTOMapper.swift */,
 			);
 			path = Mapper;
 			sourceTree = "<group>";
@@ -525,12 +536,13 @@
 				54E2EB4C2BF0A1C8006363E9 /* Point.swift in Sources */,
 				54E2EB4D2BF0A1C8006363E9 /* Stop.swift in Sources */,
 				54E2EB472BF0A1C8006363E9 /* TripView.swift in Sources */,
+				54449DD22BF0AA2500C91764 /* Trips+PreviewContent.swift in Sources */,
 				54E2EB462BF0A1C8006363E9 /* TripsView.swift in Sources */,
 				54E2EB4F2BF0A1C8006363E9 /* TripStatus.swift in Sources */,
 				54E2EB612BF0A1EB006363E9 /* MapViewModel.swift in Sources */,
 				54E2EB482BF0A1C8006363E9 /* TripStatusViewModel.swift in Sources */,
 				54E2EB512BF0A1C8006363E9 /* TripsDataSourceImpl.swift in Sources */,
-				54E2EB522BF0A1C8006363E9 /* TripMapper.swift in Sources */,
+				54E2EB522BF0A1C8006363E9 /* TripDTOMapper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
