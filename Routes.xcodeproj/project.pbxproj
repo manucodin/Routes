@@ -12,6 +12,7 @@
 		54449DCB2BF0A27200C91764 /* Polyline in Frameworks */ = {isa = PBXBuildFile; productRef = 54449DCA2BF0A27200C91764 /* Polyline */; };
 		54449DCE2BF0A2AE00C91764 /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54449DCD2BF0A2AE00C91764 /* RootViewModel.swift */; };
 		54449DD22BF0AA2500C91764 /* Trips+PreviewContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54449DD12BF0AA2500C91764 /* Trips+PreviewContent.swift */; };
+		54449DD62BF0B40800C91764 /* AnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54449DD52BF0B40800C91764 /* AnnotationView.swift */; };
 		544772962BF0A15E00E2385F /* Network in Frameworks */ = {isa = PBXBuildFile; productRef = 544772952BF0A15E00E2385F /* Network */; };
 		5447729A2BF0A16F00E2385F /* Network in Resources */ = {isa = PBXBuildFile; fileRef = 544772972BF0A16F00E2385F /* Network */; };
 		5447729B2BF0A16F00E2385F /* Utils in Resources */ = {isa = PBXBuildFile; fileRef = 544772982BF0A16F00E2385F /* Utils */; };
@@ -63,6 +64,7 @@
 		54449DC52BF0A22D00C91764 /* RootView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		54449DCD2BF0A2AE00C91764 /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
 		54449DD12BF0AA2500C91764 /* Trips+PreviewContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Trips+PreviewContent.swift"; sourceTree = "<group>"; };
+		54449DD52BF0B40800C91764 /* AnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotationView.swift; sourceTree = "<group>"; };
 		544772972BF0A16F00E2385F /* Network */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Network; sourceTree = "<group>"; };
 		544772982BF0A16F00E2385F /* Utils */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Utils; sourceTree = "<group>"; };
 		544B3C282BF0A0200017DE05 /* Routes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Routes.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -323,6 +325,7 @@
 			isa = PBXGroup;
 			children = (
 				54E2EB552BF0A1EB006363E9 /* MapView.swift */,
+				54449DD52BF0B40800C91764 /* AnnotationView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -533,6 +536,7 @@
 				54E2EB492BF0A1C8006363E9 /* TripsViewModel.swift in Sources */,
 				54E2EB452BF0A1C8006363E9 /* TripStatusView.swift in Sources */,
 				54E2EB4B2BF0A1C8006363E9 /* Destination.swift in Sources */,
+				54449DD62BF0B40800C91764 /* AnnotationView.swift in Sources */,
 				54E2EB4C2BF0A1C8006363E9 /* Point.swift in Sources */,
 				54E2EB4D2BF0A1C8006363E9 /* Stop.swift in Sources */,
 				54E2EB472BF0A1C8006363E9 /* TripView.swift in Sources */,

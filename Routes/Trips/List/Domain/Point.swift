@@ -6,8 +6,14 @@
 //
 
 import Foundation
+import CoreLocation
 
 struct Point: Hashable {
+    
+    var coordinates: CLLocationCoordinate2D {
+        return CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
+    }
+    
     let latitude: Double
     let longitude: Double
 }

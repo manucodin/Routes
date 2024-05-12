@@ -39,4 +39,5 @@ public struct TripsView: View {
 
 #Preview {
     TripsView()
+        .environmentObject(RootViewModel())
 }
