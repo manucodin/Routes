@@ -30,14 +30,16 @@ class IssueViewModel: ObservableObject {
         do {
             try validate()
             try save()
+        } catch let error as IssueError {
+            showErrorMessage(error.errorDescription ?? error.localizedDescription)
         } catch let error {
-            showError(error)
+            showErrorMessage(error.localizedDescription)
         }
     }
     
-    private func showError(_ error: Error) {
+    private func showErrorMessage(_ errorMessage: String) {
         showAlert = true
-        message = error.localizedDescription
+        message = errorMessage
     }
     
     private func validate() throws {
@@ -47,7 +49,7 @@ class IssueViewModel: ObservableObject {
             return
         }
         
-        let message = errors.map({ $0.localizedDescription }).joined(separator: "\n")
+        let message = errors.compactMap({ $0.errorDescription }).joined(separator: "\n")
         
         throw IssueError.fieldsError(message: message)
     }
@@ -55,26 +57,26 @@ class IssueViewModel: ObservableObject {
     private func validateName() -> IssueError? {
         guard let error = NameValidator().validate(issue.name) else { return nil }
      
-        return IssueError.fieldError(field: String(localized: "name"), message: error.localizedDescription)
+        return IssueError.fieldError(field: String(localized: "name"), message: error.errorDescription)
     }
     
     private func validateSurname() -> IssueError? {
         guard let error = NameValidator().validate(issue.surname) else { return nil }
         
-        return IssueError.fieldError(field: String(localized: "surname"), message: error.localizedDescription)
+        return IssueError.fieldError(field: String(localized: "surname"), message: error.errorDescription)
     }
     
     private func validateEmail() -> IssueError? {
         guard let error = EmailValidator().validate(issue.email) else { return nil }
         
-        return IssueError.fieldError(field: String(localized: "email"), message: error.localizedDescription)
+        return IssueError.fieldError(field: String(localized: "email"), message: error.errorDescription)
     }
     
     private func validatePhone() -> IssueError? {
         guard !issue.phone.isEmpty else { return nil }
         guard let error = PhoneValidator().validate(issue.phone) else { return nil }
 
-        return IssueError.fieldError(field: String(localized: "phone"), message: error.localizedDescription)
+        return IssueError.fieldError(field: String(localized: "phone"), message: error.errorDescription)
     }
     
     private func save() throws {

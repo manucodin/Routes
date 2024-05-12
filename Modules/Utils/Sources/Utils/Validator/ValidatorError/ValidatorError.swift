@@ -14,9 +14,9 @@ public enum ValidatorError: Error {
     
     public var errorDescription: String? {
         switch self {
-        case .invalidText: return String(localized: "invalid_text")
-        case .invalidPhone: return String(localized: "invalid_phone")
-        case .invalidEmail: return String(localized: "invalid_email")
+        case .invalidText: return String(localized: "invalid_text", bundle: .module)
+        case .invalidPhone: return String(localized: "invalid_phone", bundle: .module)
+        case .invalidEmail: return String(localized: "invalid_email", bundle: .module)
         }
     }
 }

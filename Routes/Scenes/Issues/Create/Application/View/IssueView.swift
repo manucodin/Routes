@@ -71,7 +71,7 @@ struct IssueView: View {
                 }
             }
         }
-        .navigationTitle("creteIssue")
+        .navigationTitle("createIssue")
         .navigationBarTitleDisplayMode(.inline)
         .listSectionSpacing(12)
         .padding(.horizontal, -10)
