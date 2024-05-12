@@ -1,6 +1,15 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "" : {
+
+    },
+    "accept" : {
+
+    },
+    "buy_date" : {
+
+    },
     "cancelled" : {
       "localizations" : {
         "en" : {
@@ -18,6 +27,15 @@
       }
     },
     "createIssue" : {
+
+    },
+    "creteIssue" : {
+
+    },
+    "email" : {
+
+    },
+    "email (required )" : {
 
     },
     "Estimated time: %@" : {
@@ -68,7 +86,19 @@
         }
       }
     },
-    "Hello, World!" : {
+    "issue_description" : {
+
+    },
+    "issue_message" : {
+
+    },
+    "issue_title" : {
+
+    },
+    "name" : {
+
+    },
+    "name (required)" : {
 
     },
     "Not paid" : {
@@ -93,6 +123,9 @@
     "Paid" : {
 
     },
+    "phone" : {
+
+    },
     "Routes" : {
 
     },
@@ -111,6 +144,15 @@
           }
         }
       }
+    },
+    "send" : {
+
+    },
+    "surname" : {
+
+    },
+    "surname (required)" : {
+
     },
     "To: %@" : {
       "localizations" : {

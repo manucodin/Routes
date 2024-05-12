@@ -9,5 +9,11 @@ import Foundation
 
 class IssueViewModel: ObservableObject {
     
-    @Published var contact = Issue()
+    @Published var issue = Issue()
+    @Published var requiredFieldsCompleted: Bool = false
+    
+    @Published var saved: Bool = false
+    
+    @Published var showAlert: Bool = false
+    @Published var message: String = ""
 }

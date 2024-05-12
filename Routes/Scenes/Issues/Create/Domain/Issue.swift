@@ -8,12 +8,12 @@
 import Foundation
 
 struct Issue {
-    let name: String
-    let surname: String
-    let email: String
-    let phone: String?
-    let date: Date
-    let message: String
+    var name: String
+    var surname: String
+    var email: String
+    var phone: String?
+    var date: Date
+    var message: String
     
     init(name: String = "", surname: String = "", email: String = "", phone: String? = nil, date: Date = Date(), message: String = "") {
         self.name = name
