@@ -27,6 +27,7 @@
 		54B090442BF0C17400CB3419 /* StopInfoDataSourceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B090432BF0C17400CB3419 /* StopInfoDataSourceImpl.swift */; };
 		54B090462BF0C1C400CB3419 /* StopInfoDTOMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B090452BF0C1C400CB3419 /* StopInfoDTOMapper.swift */; };
 		54B090482BF0C3EF00CB3419 /* StopInfoPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B090472BF0C3EF00CB3419 /* StopInfoPoint.swift */; };
+		54B0904D2BF0C8B800CB3419 /* PresentationSheetModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B0904C2BF0C8B800CB3419 /* PresentationSheetModifier.swift */; };
 		54E2EB2A2BF0A19E006363E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54E2EB292BF0A19E006363E9 /* Assets.xcassets */; };
 		54E2EB2C2BF0A1A3006363E9 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 54E2EB2B2BF0A1A3006363E9 /* Localizable.xcstrings */; };
 		54E2EB452BF0A1C8006363E9 /* TripStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E2EB2D2BF0A1C8006363E9 /* TripStatusView.swift */; };
@@ -88,6 +89,7 @@
 		54B090432BF0C17400CB3419 /* StopInfoDataSourceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopInfoDataSourceImpl.swift; sourceTree = "<group>"; };
 		54B090452BF0C1C400CB3419 /* StopInfoDTOMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopInfoDTOMapper.swift; sourceTree = "<group>"; };
 		54B090472BF0C3EF00CB3419 /* StopInfoPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopInfoPoint.swift; sourceTree = "<group>"; };
+		54B0904C2BF0C8B800CB3419 /* PresentationSheetModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationSheetModifier.swift; sourceTree = "<group>"; };
 		54E2EB292BF0A19E006363E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		54E2EB2B2BF0A1A3006363E9 /* Localizable.xcstrings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		54E2EB2D2BF0A1C8006363E9 /* TripStatusView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripStatusView.swift; sourceTree = "<group>"; };
@@ -213,10 +215,8 @@
 		544B3C2A2BF0A0200017DE05 /* Routes */ = {
 			isa = PBXGroup;
 			children = (
-				54B090332BF0BE6D00CB3419 /* Stop */,
-				54449DC72BF0A22D00C91764 /* Root */,
-				54E2EB5F2BF0A1EB006363E9 /* Map */,
-				54E2EB442BF0A1C8006363E9 /* Trips */,
+				54B0904B2BF0C8A400CB3419 /* Modifiers */,
+				54B0904A2BF0C89500CB3419 /* Scenes */,
 				54E2EB532BF0A1DF006363E9 /* RoutesApp.swift */,
 				54E2EB2B2BF0A1A3006363E9 /* Localizable.xcstrings */,
 				54E2EB292BF0A19E006363E9 /* Assets.xcassets */,
@@ -319,6 +319,25 @@
 				54B090452BF0C1C400CB3419 /* StopInfoDTOMapper.swift */,
 			);
 			path = Mapper;
+			sourceTree = "<group>";
+		};
+		54B0904A2BF0C89500CB3419 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				54B090332BF0BE6D00CB3419 /* Stop */,
+				54449DC72BF0A22D00C91764 /* Root */,
+				54E2EB5F2BF0A1EB006363E9 /* Map */,
+				54E2EB442BF0A1C8006363E9 /* Trips */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		54B0904B2BF0C8A400CB3419 /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				54B0904C2BF0C8B800CB3419 /* PresentationSheetModifier.swift */,
+			);
+			path = Modifiers;
 			sourceTree = "<group>";
 		};
 		54E2EB302BF0A1C8006363E9 /* View */ = {
@@ -609,6 +628,7 @@
 				54B0903C2BF0BF5F00CB3419 /* StopViewModel.swift in Sources */,
 				54449DC82BF0A22D00C91764 /* RootView.swift in Sources */,
 				54E2EB542BF0A1DF006363E9 /* RoutesApp.swift in Sources */,
+				54B0904D2BF0C8B800CB3419 /* PresentationSheetModifier.swift in Sources */,
 				54E2EB502BF0A1C8006363E9 /* TripsDataSource.swift in Sources */,
 				54B090482BF0C3EF00CB3419 /* StopInfoPoint.swift in Sources */,
 				54E2EB4A2BF0A1C8006363E9 /* TripViewModel.swift in Sources */,

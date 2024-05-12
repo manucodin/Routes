@@ -14,21 +14,13 @@ struct RootView: View {
         MapView()
             .sheet(isPresented: $rootVM.showTrips, content: {
                 TripsView()
+                    .presentationSheet()
                     .interactiveDismissDisabled(true)
-                    .presentationDragIndicator(.visible)
-                    .presentationDetents([.height(160), .medium])
-                    .presentationBackgroundInteraction(
-                        .enabled(upThrough: .medium)
-                    )
                     
             })
             .sheet(isPresented: $rootVM.showStop, content: {
                 StopView()
-                    .presentationDragIndicator(.visible)
-                    .presentationDetents([.height(160), .medium])
-                    .presentationBackgroundInteraction(
-                        .enabled(upThrough: .medium)
-                    )
+                    .presentationSheet()
             })
     }
 }
