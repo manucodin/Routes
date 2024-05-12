@@ -12,7 +12,7 @@ struct RootView: View {
         
     var body: some View {
         MapView()
-            .sheet(isPresented: .constant(true), content: {
+            .sheet(isPresented: $rootVM.showTrips, content: {
                 TripsView()
                     .interactiveDismissDisabled(true)
                     .presentationDragIndicator(.visible)

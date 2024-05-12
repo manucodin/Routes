@@ -35,6 +35,7 @@ struct MapView: View {
                         AnnotationView(icon: "mappin").onTapGesture {
                             withAnimation {
                                 mapVM.selectedPoint = stop.point
+                                rootVM.selectedStop = stop
                             }
                         }
                     }
