@@ -20,6 +20,16 @@
 		544B3C3D2BF0A0210017DE05 /* RoutesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544B3C3C2BF0A0210017DE05 /* RoutesTests.swift */; };
 		544B3C472BF0A0210017DE05 /* RoutesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544B3C462BF0A0210017DE05 /* RoutesUITests.swift */; };
 		544B3C492BF0A0210017DE05 /* RoutesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544B3C482BF0A0210017DE05 /* RoutesUITestsLaunchTests.swift */; };
+		5471A7302BF11453001881DC /* IssueError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5471A72F2BF11453001881DC /* IssueError.swift */; };
+		5471A7362BF11E52001881DC /* IssueEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5471A7352BF11E52001881DC /* IssueEntity.swift */; };
+		5471A7382BF11E64001881DC /* IssueDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5471A7372BF11E64001881DC /* IssueDataSource.swift */; };
+		5471A73A2BF11E6D001881DC /* IssueDataSourceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5471A7392BF11E6D001881DC /* IssueDataSourceImpl.swift */; };
+		5471A73C2BF11E76001881DC /* IssueEntityMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5471A73B2BF11E76001881DC /* IssueEntityMapper.swift */; };
+		5471A7402BF1236D001881DC /* ApplicationBadgeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5471A73F2BF1236D001881DC /* ApplicationBadgeService.swift */; };
+		5471A7422BF1238C001881DC /* ApplicationBadgeServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5471A7412BF1238C001881DC /* ApplicationBadgeServiceImpl.swift */; };
+		548AC64B2BF1098200CAA0F6 /* CustomRoundedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548AC64A2BF1098200CAA0F6 /* CustomRoundedTextField.swift */; };
+		548AC64D2BF1099C00CAA0F6 /* RoundedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548AC64C2BF1099C00CAA0F6 /* RoundedTextField.swift */; };
+		548AC64F2BF10B6A00CAA0F6 /* TextAreaModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548AC64E2BF10B6A00CAA0F6 /* TextAreaModifier.swift */; };
 		54B0903A2BF0BF5300CB3419 /* StopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B090392BF0BF5300CB3419 /* StopView.swift */; };
 		54B0903C2BF0BF5F00CB3419 /* StopInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B0903B2BF0BF5F00CB3419 /* StopInfoViewModel.swift */; };
 		54B0903E2BF0BF7900CB3419 /* StopInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B0903D2BF0BF7900CB3419 /* StopInfo.swift */; };
@@ -51,6 +61,9 @@
 		54E2EB612BF0A1EB006363E9 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E2EB572BF0A1EB006363E9 /* MapViewModel.swift */; };
 		54E2EB622BF0A1EB006363E9 /* PolylineDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E2EB5B2BF0A1EB006363E9 /* PolylineDataSource.swift */; };
 		54E2EB632BF0A1EB006363E9 /* PolylineDataSourceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E2EB5C2BF0A1EB006363E9 /* PolylineDataSourceImpl.swift */; };
+		54FB45382BF0F709007E653E /* IssueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FB45372BF0F709007E653E /* IssueView.swift */; };
+		54FB453A2BF0F716007E653E /* IssueViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FB45392BF0F716007E653E /* IssueViewModel.swift */; };
+		54FB453C2BF0F728007E653E /* Issue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FB453B2BF0F728007E653E /* Issue.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +97,16 @@
 		544B3C422BF0A0210017DE05 /* RoutesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoutesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		544B3C462BF0A0210017DE05 /* RoutesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutesUITests.swift; sourceTree = "<group>"; };
 		544B3C482BF0A0210017DE05 /* RoutesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5471A72F2BF11453001881DC /* IssueError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueError.swift; sourceTree = "<group>"; };
+		5471A7352BF11E52001881DC /* IssueEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueEntity.swift; sourceTree = "<group>"; };
+		5471A7372BF11E64001881DC /* IssueDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueDataSource.swift; sourceTree = "<group>"; };
+		5471A7392BF11E6D001881DC /* IssueDataSourceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueDataSourceImpl.swift; sourceTree = "<group>"; };
+		5471A73B2BF11E76001881DC /* IssueEntityMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueEntityMapper.swift; sourceTree = "<group>"; };
+		5471A73F2BF1236D001881DC /* ApplicationBadgeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationBadgeService.swift; sourceTree = "<group>"; };
+		5471A7412BF1238C001881DC /* ApplicationBadgeServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationBadgeServiceImpl.swift; sourceTree = "<group>"; };
+		548AC64A2BF1098200CAA0F6 /* CustomRoundedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomRoundedTextField.swift; sourceTree = "<group>"; };
+		548AC64C2BF1099C00CAA0F6 /* RoundedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedTextField.swift; sourceTree = "<group>"; };
+		548AC64E2BF10B6A00CAA0F6 /* TextAreaModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextAreaModifier.swift; sourceTree = "<group>"; };
 		54B090392BF0BF5300CB3419 /* StopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopView.swift; sourceTree = "<group>"; };
 		54B0903B2BF0BF5F00CB3419 /* StopInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopInfoViewModel.swift; sourceTree = "<group>"; };
 		54B0903D2BF0BF7900CB3419 /* StopInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopInfo.swift; sourceTree = "<group>"; };
@@ -115,6 +138,9 @@
 		54E2EB572BF0A1EB006363E9 /* MapViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
 		54E2EB5B2BF0A1EB006363E9 /* PolylineDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolylineDataSource.swift; sourceTree = "<group>"; };
 		54E2EB5C2BF0A1EB006363E9 /* PolylineDataSourceImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolylineDataSourceImpl.swift; sourceTree = "<group>"; };
+		54FB45372BF0F709007E653E /* IssueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueView.swift; sourceTree = "<group>"; };
+		54FB45392BF0F716007E653E /* IssueViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueViewModel.swift; sourceTree = "<group>"; };
+		54FB453B2BF0F728007E653E /* Issue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Issue.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -257,6 +283,59 @@
 			path = RoutesUITests;
 			sourceTree = "<group>";
 		};
+		5471A7312BF11E1F001881DC /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				5471A7332BF11E3C001881DC /* Application Badge */,
+				5471A7322BF11E34001881DC /* DataBase */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		5471A7322BF11E34001881DC /* DataBase */ = {
+			isa = PBXGroup;
+			children = (
+				5471A73E2BF11E8E001881DC /* Mapper */,
+				5471A73D2BF11E86001881DC /* Entity */,
+				5471A7372BF11E64001881DC /* IssueDataSource.swift */,
+				5471A7392BF11E6D001881DC /* IssueDataSourceImpl.swift */,
+			);
+			path = DataBase;
+			sourceTree = "<group>";
+		};
+		5471A7332BF11E3C001881DC /* Application Badge */ = {
+			isa = PBXGroup;
+			children = (
+				5471A73F2BF1236D001881DC /* ApplicationBadgeService.swift */,
+				5471A7412BF1238C001881DC /* ApplicationBadgeServiceImpl.swift */,
+			);
+			path = "Application Badge";
+			sourceTree = "<group>";
+		};
+		5471A73D2BF11E86001881DC /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				5471A7352BF11E52001881DC /* IssueEntity.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		5471A73E2BF11E8E001881DC /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+				5471A73B2BF11E76001881DC /* IssueEntityMapper.swift */,
+			);
+			path = Mapper;
+			sourceTree = "<group>";
+		};
+		548AC6492BF1097400CAA0F6 /* CustomRoundedTextField */ = {
+			isa = PBXGroup;
+			children = (
+				548AC64A2BF1098200CAA0F6 /* CustomRoundedTextField.swift */,
+			);
+			path = CustomRoundedTextField;
+			sourceTree = "<group>";
+		};
 		54B090332BF0BE6D00CB3419 /* Stop */ = {
 			isa = PBXGroup;
 			children = (
@@ -320,9 +399,10 @@
 		54B0904A2BF0C89500CB3419 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				54B090332BF0BE6D00CB3419 /* Stop */,
+				54FB45302BF0F6A7007E653E /* Issues */,
 				54449DC72BF0A22D00C91764 /* Root */,
 				54E2EB5F2BF0A1EB006363E9 /* Map */,
+				54B090332BF0BE6D00CB3419 /* Stop */,
 				54E2EB442BF0A1C8006363E9 /* Trips */,
 			);
 			path = Scenes;
@@ -332,6 +412,8 @@
 			isa = PBXGroup;
 			children = (
 				54B0904C2BF0C8B800CB3419 /* PresentationSheetModifier.swift */,
+				548AC64C2BF1099C00CAA0F6 /* RoundedTextField.swift */,
+				548AC64E2BF10B6A00CAA0F6 /* TextAreaModifier.swift */,
 			);
 			path = Modifiers;
 			sourceTree = "<group>";
@@ -398,6 +480,7 @@
 		54B0905B2BF0DA6E00CB3419 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				548AC6492BF1097400CAA0F6 /* CustomRoundedTextField */,
 				54B0905C2BF0DA7600CB3419 /* PillTextView */,
 			);
 			path = Components;
@@ -547,6 +630,66 @@
 			path = Map;
 			sourceTree = "<group>";
 		};
+		54FB45302BF0F6A7007E653E /* Issues */ = {
+			isa = PBXGroup;
+			children = (
+				54FB45312BF0F6B0007E653E /* Create */,
+			);
+			path = Issues;
+			sourceTree = "<group>";
+		};
+		54FB45312BF0F6B0007E653E /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				54FB45332BF0F6C4007E653E /* Domain */,
+				54FB45322BF0F6BE007E653E /* Application */,
+				54FB45342BF0F6CA007E653E /* Infraestructure */,
+			);
+			path = Create;
+			sourceTree = "<group>";
+		};
+		54FB45322BF0F6BE007E653E /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				54FB45352BF0F6F6007E653E /* View */,
+				54FB45362BF0F6FB007E653E /* ViewModel */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		54FB45332BF0F6C4007E653E /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				54FB453B2BF0F728007E653E /* Issue.swift */,
+				5471A72F2BF11453001881DC /* IssueError.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		54FB45342BF0F6CA007E653E /* Infraestructure */ = {
+			isa = PBXGroup;
+			children = (
+				5471A7312BF11E1F001881DC /* DataSource */,
+			);
+			path = Infraestructure;
+			sourceTree = "<group>";
+		};
+		54FB45352BF0F6F6007E653E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				54FB45372BF0F709007E653E /* IssueView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		54FB45362BF0F6FB007E653E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				54FB45392BF0F716007E653E /* IssueViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -690,19 +833,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54FB453C2BF0F728007E653E /* Issue.swift in Sources */,
 				54E2EB622BF0A1EB006363E9 /* PolylineDataSource.swift in Sources */,
 				54E2EB632BF0A1EB006363E9 /* PolylineDataSourceImpl.swift in Sources */,
 				54E2EB4E2BF0A1C8006363E9 /* Trip.swift in Sources */,
+				5471A7422BF1238C001881DC /* ApplicationBadgeServiceImpl.swift in Sources */,
 				54449DCE2BF0A2AE00C91764 /* RootViewModel.swift in Sources */,
+				5471A7302BF11453001881DC /* IssueError.swift in Sources */,
 				54E2EB602BF0A1EB006363E9 /* MapView.swift in Sources */,
 				54B0903C2BF0BF5F00CB3419 /* StopInfoViewModel.swift in Sources */,
 				54449DC82BF0A22D00C91764 /* RootView.swift in Sources */,
 				54E2EB542BF0A1DF006363E9 /* RoutesApp.swift in Sources */,
 				54B0904D2BF0C8B800CB3419 /* PresentationSheetModifier.swift in Sources */,
+				54FB45382BF0F709007E653E /* IssueView.swift in Sources */,
 				54E2EB502BF0A1C8006363E9 /* TripsDataSource.swift in Sources */,
 				54B0905E2BF0DA8600CB3419 /* PillTextView.swift in Sources */,
 				54B090482BF0C3EF00CB3419 /* StopInfoPoint.swift in Sources */,
+				548AC64B2BF1098200CAA0F6 /* CustomRoundedTextField.swift in Sources */,
 				54E2EB4A2BF0A1C8006363E9 /* TripViewModel.swift in Sources */,
+				548AC64F2BF10B6A00CAA0F6 /* TextAreaModifier.swift in Sources */,
+				5471A7382BF11E64001881DC /* IssueDataSource.swift in Sources */,
 				54E2EB492BF0A1C8006363E9 /* TripsViewModel.swift in Sources */,
 				54B0903A2BF0BF5300CB3419 /* StopView.swift in Sources */,
 				54E2EB4B2BF0A1C8006363E9 /* Destination.swift in Sources */,
@@ -710,19 +860,25 @@
 				54B0903E2BF0BF7900CB3419 /* StopInfo.swift in Sources */,
 				54B090572BF0CC4B00CB3419 /* StopsViewModel.swift in Sources */,
 				54B090512BF0CAA500CB3419 /* StopInfo+PreviewContent.swift in Sources */,
+				5471A7362BF11E52001881DC /* IssueEntity.swift in Sources */,
 				54E2EB4C2BF0A1C8006363E9 /* Point.swift in Sources */,
 				54B090422BF0C16500CB3419 /* StopsDataSource.swift in Sources */,
 				54E2EB4D2BF0A1C8006363E9 /* Stop.swift in Sources */,
 				54E2EB472BF0A1C8006363E9 /* TripView.swift in Sources */,
 				54B090462BF0C1C400CB3419 /* StopInfoDTOMapper.swift in Sources */,
 				54449DD22BF0AA2500C91764 /* Trips+PreviewContent.swift in Sources */,
+				5471A7402BF1236D001881DC /* ApplicationBadgeService.swift in Sources */,
+				5471A73C2BF11E76001881DC /* IssueEntityMapper.swift in Sources */,
 				54E2EB462BF0A1C8006363E9 /* TripsView.swift in Sources */,
 				54B090442BF0C17400CB3419 /* StopsDataSourceImpl.swift in Sources */,
+				5471A73A2BF11E6D001881DC /* IssueDataSourceImpl.swift in Sources */,
 				54E2EB4F2BF0A1C8006363E9 /* TripStatus.swift in Sources */,
 				54E2EB612BF0A1EB006363E9 /* MapViewModel.swift in Sources */,
+				54FB453A2BF0F716007E653E /* IssueViewModel.swift in Sources */,
 				54E2EB482BF0A1C8006363E9 /* TripStatusViewModel.swift in Sources */,
 				54E2EB512BF0A1C8006363E9 /* TripsDataSourceImpl.swift in Sources */,
 				54E2EB522BF0A1C8006363E9 /* TripDTOMapper.swift in Sources */,
+				548AC64D2BF1099C00CAA0F6 /* RoundedTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

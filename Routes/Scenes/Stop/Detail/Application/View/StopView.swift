@@ -37,8 +37,9 @@ struct StopView: View {
                 }
             }
             .padding()
+            Color.gray.opacity(0.1)
         }
-        .background(Color.gray.opacity(0.1))
+        .ignoresSafeArea()
     }
 }
 
