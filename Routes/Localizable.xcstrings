@@ -17,6 +17,9 @@
         }
       }
     },
+    "createIssue" : {
+
+    },
     "Estimated time: %@" : {
       "localizations" : {
         "en" : {
@@ -64,6 +67,9 @@
           }
         }
       }
+    },
+    "Hello, World!" : {
+
     },
     "Not paid" : {
 

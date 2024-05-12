@@ -21,7 +21,6 @@ class StopsViewModel: ObservableObject {
         Task { @MainActor in
             do {
                 self.selectStopInfo = try await stopsDataSource.obtainStopInfo(id: id)
-                debugPrint(selectStopInfo)
             } catch let error {
                 handleError(error)
             }

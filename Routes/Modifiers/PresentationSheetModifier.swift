@@ -15,9 +15,7 @@ struct PresentationSheetModifier: ViewModifier {
         content
             .presentationDragIndicator(.visible)
             .presentationDetents(presentationDetens)
-            .presentationBackgroundInteraction(
-                .enabled(upThrough: .medium)
-            )
+            .presentationBackgroundInteraction(.enabled(upThrough: .medium))
     }
 }
 

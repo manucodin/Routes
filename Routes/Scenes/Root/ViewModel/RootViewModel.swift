@@ -13,8 +13,9 @@ class RootViewModel: ObservableObject {
     @Published var selectedStop: Stop?
     @Published var selectedStopInfo: StopInfo?
     
-    @Published var showTrips: Bool = true
+    @Published var showTrips: Bool = false
     @Published var showStop: Bool = false
+    @Published var createIssue: Bool = false
     
     private var cancellables: Set<AnyCancellable> = []
     

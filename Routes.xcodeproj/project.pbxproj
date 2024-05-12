@@ -51,6 +51,9 @@
 		54E2EB612BF0A1EB006363E9 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E2EB572BF0A1EB006363E9 /* MapViewModel.swift */; };
 		54E2EB622BF0A1EB006363E9 /* PolylineDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E2EB5B2BF0A1EB006363E9 /* PolylineDataSource.swift */; };
 		54E2EB632BF0A1EB006363E9 /* PolylineDataSourceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E2EB5C2BF0A1EB006363E9 /* PolylineDataSourceImpl.swift */; };
+		54FB45382BF0F709007E653E /* IssueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FB45372BF0F709007E653E /* IssueView.swift */; };
+		54FB453A2BF0F716007E653E /* IssueViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FB45392BF0F716007E653E /* IssueViewModel.swift */; };
+		54FB453C2BF0F728007E653E /* Issue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FB453B2BF0F728007E653E /* Issue.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,6 +118,9 @@
 		54E2EB572BF0A1EB006363E9 /* MapViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
 		54E2EB5B2BF0A1EB006363E9 /* PolylineDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolylineDataSource.swift; sourceTree = "<group>"; };
 		54E2EB5C2BF0A1EB006363E9 /* PolylineDataSourceImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolylineDataSourceImpl.swift; sourceTree = "<group>"; };
+		54FB45372BF0F709007E653E /* IssueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueView.swift; sourceTree = "<group>"; };
+		54FB45392BF0F716007E653E /* IssueViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueViewModel.swift; sourceTree = "<group>"; };
+		54FB453B2BF0F728007E653E /* Issue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Issue.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -320,9 +326,10 @@
 		54B0904A2BF0C89500CB3419 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				54B090332BF0BE6D00CB3419 /* Stop */,
+				54FB45302BF0F6A7007E653E /* Issues */,
 				54449DC72BF0A22D00C91764 /* Root */,
 				54E2EB5F2BF0A1EB006363E9 /* Map */,
+				54B090332BF0BE6D00CB3419 /* Stop */,
 				54E2EB442BF0A1C8006363E9 /* Trips */,
 			);
 			path = Scenes;
@@ -547,6 +554,64 @@
 			path = Map;
 			sourceTree = "<group>";
 		};
+		54FB45302BF0F6A7007E653E /* Issues */ = {
+			isa = PBXGroup;
+			children = (
+				54FB45312BF0F6B0007E653E /* Create */,
+			);
+			path = Issues;
+			sourceTree = "<group>";
+		};
+		54FB45312BF0F6B0007E653E /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				54FB45332BF0F6C4007E653E /* Domain */,
+				54FB45322BF0F6BE007E653E /* Application */,
+				54FB45342BF0F6CA007E653E /* Infraestructure */,
+			);
+			path = Create;
+			sourceTree = "<group>";
+		};
+		54FB45322BF0F6BE007E653E /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				54FB45352BF0F6F6007E653E /* View */,
+				54FB45362BF0F6FB007E653E /* ViewModel */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		54FB45332BF0F6C4007E653E /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				54FB453B2BF0F728007E653E /* Issue.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		54FB45342BF0F6CA007E653E /* Infraestructure */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Infraestructure;
+			sourceTree = "<group>";
+		};
+		54FB45352BF0F6F6007E653E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				54FB45372BF0F709007E653E /* IssueView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		54FB45362BF0F6FB007E653E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				54FB45392BF0F716007E653E /* IssueViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -690,6 +755,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54FB453C2BF0F728007E653E /* Issue.swift in Sources */,
 				54E2EB622BF0A1EB006363E9 /* PolylineDataSource.swift in Sources */,
 				54E2EB632BF0A1EB006363E9 /* PolylineDataSourceImpl.swift in Sources */,
 				54E2EB4E2BF0A1C8006363E9 /* Trip.swift in Sources */,
@@ -699,6 +765,7 @@
 				54449DC82BF0A22D00C91764 /* RootView.swift in Sources */,
 				54E2EB542BF0A1DF006363E9 /* RoutesApp.swift in Sources */,
 				54B0904D2BF0C8B800CB3419 /* PresentationSheetModifier.swift in Sources */,
+				54FB45382BF0F709007E653E /* IssueView.swift in Sources */,
 				54E2EB502BF0A1C8006363E9 /* TripsDataSource.swift in Sources */,
 				54B0905E2BF0DA8600CB3419 /* PillTextView.swift in Sources */,
 				54B090482BF0C3EF00CB3419 /* StopInfoPoint.swift in Sources */,
@@ -720,6 +787,7 @@
 				54B090442BF0C17400CB3419 /* StopsDataSourceImpl.swift in Sources */,
 				54E2EB4F2BF0A1C8006363E9 /* TripStatus.swift in Sources */,
 				54E2EB612BF0A1EB006363E9 /* MapViewModel.swift in Sources */,
+				54FB453A2BF0F716007E653E /* IssueViewModel.swift in Sources */,
 				54E2EB482BF0A1C8006363E9 /* TripStatusViewModel.swift in Sources */,
 				54E2EB512BF0A1C8006363E9 /* TripsDataSourceImpl.swift in Sources */,
 				54E2EB522BF0A1C8006363E9 /* TripDTOMapper.swift in Sources */,
