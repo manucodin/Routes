@@ -65,6 +65,9 @@
         }
       }
     },
+    "Not paid" : {
+
+    },
     "ongoing" : {
       "localizations" : {
         "en" : {
@@ -80,6 +83,9 @@
           }
         }
       }
+    },
+    "Paid" : {
+
     },
     "Routes" : {
 
