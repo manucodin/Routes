@@ -17,24 +17,28 @@ struct StopView: View {
     }
     
     var body: some View {
-        HStack (alignment: .top) {
-            VStack (alignment: .leading) {
-                Text(viewModel.address)
-                    .font(.title3)
-                    .fontWeight(.bold)
-                Text(viewModel.userName)
+        ZStack {
+            HStack {
+                VStack (alignment: .leading) {
+                    Text(viewModel.address)
+                        .font(.title3)
+                        .fontWeight(.bold)
+                    Text(viewModel.userName)
+                }
+                Spacer()
+                VStack (spacing: 0){
+                    Text(viewModel.price)
+                        .font(.title3)
+                    PillTextView(
+                        text: viewModel.statusText,
+                        textColor: viewModel.statusTextColor,
+                        backgroundColor: viewModel.statusBackgroundColor
+                    )
+                }
             }
-            Spacer()
-            VStack {
-                Text(viewModel.price)
-                    .font(.title2)
-                PillTextView(
-                    text: viewModel.statusText,
-                    textColor: viewModel.statusTextColor,
-                    backgroundColor: viewModel.statusBackgroundColor
-                )
-            }
+            .padding()
         }
+        .background(Color.gray.opacity(0.1))
     }
 }
 
