@@ -28,9 +28,11 @@ class IssueViewModel: ObservableObject {
     }
     
     private let issueDataSource: IssuesDataSource
+    private let applicationBadgeService: ApplicationBadgeService
     
-    init(issueDataSource: IssuesDataSource = IssuesDataSourceImpl()) {
+    init(issueDataSource: IssuesDataSource = IssuesDataSourceImpl(), applicationBadgeService: ApplicationBadgeService = ApplicationBadgeServiceImpl()) {
         self.issueDataSource = issueDataSource
+        self.applicationBadgeService = applicationBadgeService
     }
     
     func sendIssue(_ modelContext: ModelContext) {
@@ -88,6 +90,10 @@ class IssueViewModel: ObservableObject {
     
     private func save(_ modelContext: ModelContext) throws {
         try issueDataSource.save(issue, modelContext: modelContext)
+        
+        let issues = try issueDataSource.getIssues(modelContext)
+        applicationBadgeService.setApplicationBadge(issues.count)
+        
         saved.toggle()
     }
 }

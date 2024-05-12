@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 import Combine
 
 class RootViewModel: ObservableObject {
@@ -23,5 +24,11 @@ class RootViewModel: ObservableObject {
         $selectedStop.sink { [weak self] stop in
             self?.showStop = stop != nil
         }.store(in: &cancellables)
+    }
+    
+    func requestNotificationPermission() {
+        Task {
+            try await UNUserNotificationCenter.current().requestAuthorization(options: .badge)
+        }
     }
 }

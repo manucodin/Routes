@@ -28,7 +28,9 @@ struct RoutesApp: App {
     
     var body: some Scene {
         WindowGroup {
-            RootView()
+            RootView().onAppear {
+                rootVM.requestNotificationPermission()
+            }
         }
         .modelContainer(modelContainer)
         .environmentObject(rootVM)

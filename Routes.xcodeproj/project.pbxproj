@@ -25,6 +25,8 @@
 		5471A7382BF11E64001881DC /* IssueDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5471A7372BF11E64001881DC /* IssueDataSource.swift */; };
 		5471A73A2BF11E6D001881DC /* IssueDataSourceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5471A7392BF11E6D001881DC /* IssueDataSourceImpl.swift */; };
 		5471A73C2BF11E76001881DC /* IssueEntityMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5471A73B2BF11E76001881DC /* IssueEntityMapper.swift */; };
+		5471A7402BF1236D001881DC /* ApplicationBadgeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5471A73F2BF1236D001881DC /* ApplicationBadgeService.swift */; };
+		5471A7422BF1238C001881DC /* ApplicationBadgeServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5471A7412BF1238C001881DC /* ApplicationBadgeServiceImpl.swift */; };
 		548AC64B2BF1098200CAA0F6 /* CustomRoundedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548AC64A2BF1098200CAA0F6 /* CustomRoundedTextField.swift */; };
 		548AC64D2BF1099C00CAA0F6 /* RoundedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548AC64C2BF1099C00CAA0F6 /* RoundedTextField.swift */; };
 		548AC64F2BF10B6A00CAA0F6 /* TextAreaModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548AC64E2BF10B6A00CAA0F6 /* TextAreaModifier.swift */; };
@@ -100,6 +102,8 @@
 		5471A7372BF11E64001881DC /* IssueDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueDataSource.swift; sourceTree = "<group>"; };
 		5471A7392BF11E6D001881DC /* IssueDataSourceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueDataSourceImpl.swift; sourceTree = "<group>"; };
 		5471A73B2BF11E76001881DC /* IssueEntityMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueEntityMapper.swift; sourceTree = "<group>"; };
+		5471A73F2BF1236D001881DC /* ApplicationBadgeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationBadgeService.swift; sourceTree = "<group>"; };
+		5471A7412BF1238C001881DC /* ApplicationBadgeServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationBadgeServiceImpl.swift; sourceTree = "<group>"; };
 		548AC64A2BF1098200CAA0F6 /* CustomRoundedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomRoundedTextField.swift; sourceTree = "<group>"; };
 		548AC64C2BF1099C00CAA0F6 /* RoundedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedTextField.swift; sourceTree = "<group>"; };
 		548AC64E2BF10B6A00CAA0F6 /* TextAreaModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextAreaModifier.swift; sourceTree = "<group>"; };
@@ -302,6 +306,8 @@
 		5471A7332BF11E3C001881DC /* Application Badge */ = {
 			isa = PBXGroup;
 			children = (
+				5471A73F2BF1236D001881DC /* ApplicationBadgeService.swift */,
+				5471A7412BF1238C001881DC /* ApplicationBadgeServiceImpl.swift */,
 			);
 			path = "Application Badge";
 			sourceTree = "<group>";
@@ -831,6 +837,7 @@
 				54E2EB622BF0A1EB006363E9 /* PolylineDataSource.swift in Sources */,
 				54E2EB632BF0A1EB006363E9 /* PolylineDataSourceImpl.swift in Sources */,
 				54E2EB4E2BF0A1C8006363E9 /* Trip.swift in Sources */,
+				5471A7422BF1238C001881DC /* ApplicationBadgeServiceImpl.swift in Sources */,
 				54449DCE2BF0A2AE00C91764 /* RootViewModel.swift in Sources */,
 				5471A7302BF11453001881DC /* IssueError.swift in Sources */,
 				54E2EB602BF0A1EB006363E9 /* MapView.swift in Sources */,
@@ -860,6 +867,7 @@
 				54E2EB472BF0A1C8006363E9 /* TripView.swift in Sources */,
 				54B090462BF0C1C400CB3419 /* StopInfoDTOMapper.swift in Sources */,
 				54449DD22BF0AA2500C91764 /* Trips+PreviewContent.swift in Sources */,
+				5471A7402BF1236D001881DC /* ApplicationBadgeService.swift in Sources */,
 				5471A73C2BF11E76001881DC /* IssueEntityMapper.swift in Sources */,
 				54E2EB462BF0A1C8006363E9 /* TripsView.swift in Sources */,
 				54B090442BF0C17400CB3419 /* StopsDataSourceImpl.swift in Sources */,

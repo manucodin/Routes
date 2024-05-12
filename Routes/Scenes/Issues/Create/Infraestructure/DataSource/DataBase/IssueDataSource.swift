@@ -10,4 +10,5 @@ import SwiftData
 
 protocol IssuesDataSource {
     func save(_ issue: Issue, modelContext: ModelContext) throws
+    func getIssues(_ modelContext: ModelContext) throws -> [Issue]
 }
