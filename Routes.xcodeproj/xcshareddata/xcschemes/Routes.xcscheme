@@ -15,10 +15,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "Network"
-               BuildableName = "Network"
-               BlueprintName = "Network"
-               ReferencedContainer = "container:">
+               BlueprintIdentifier = "544B3C272BF0A0200017DE05"
+               BuildableName = "Routes.app"
+               BlueprintName = "Routes"
+               ReferencedContainer = "container:Routes.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -30,13 +30,34 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <TestPlans>
          <TestPlanReference
-            reference = "container:Tests/NetworkTests/Network.xctestplan"
+            reference = "container:Routes.xctestplan"
             default = "YES">
          </TestPlanReference>
-         <TestPlanReference
-            reference = "container:../../Routes.xctestplan">
-         </TestPlanReference>
       </TestPlans>
+      <Testables>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "544B3C372BF0A0210017DE05"
+               BuildableName = "RoutesTests.xctest"
+               BlueprintName = "RoutesTests"
+               ReferencedContainer = "container:Routes.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "544B3C412BF0A0210017DE05"
+               BuildableName = "RoutesUITests.xctest"
+               BlueprintName = "RoutesUITests"
+               ReferencedContainer = "container:Routes.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+      </Testables>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
@@ -48,6 +69,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "544B3C272BF0A0200017DE05"
+            BuildableName = "Routes.app"
+            BlueprintName = "Routes"
+            ReferencedContainer = "container:Routes.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -55,15 +86,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "Network"
-            BuildableName = "Network"
-            BlueprintName = "Network"
-            ReferencedContainer = "container:">
+            BlueprintIdentifier = "544B3C272BF0A0200017DE05"
+            BuildableName = "Routes.app"
+            BlueprintName = "Routes"
+            ReferencedContainer = "container:Routes.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

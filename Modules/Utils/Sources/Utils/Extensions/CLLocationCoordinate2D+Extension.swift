@@ -10,29 +10,32 @@ import CoreLocation
 
 public extension Array where Element == CLLocationCoordinate2D {
     func center() -> CLLocationCoordinate2D {
-        var maxLatitude: Double = -200;
-        var maxLongitude: Double = -200;
-        var minLatitude: Double = Double(MAXFLOAT);
-        var minLongitude: Double = Double(MAXFLOAT);
+        var maxLatitude: Double = -200
+        var maxLongitude: Double = -200
+        var minLatitude: Double = Double(MAXFLOAT)
+        var minLongitude: Double = Double(MAXFLOAT)
         
         for location in self {
             if location.latitude < minLatitude {
-                minLatitude = location.latitude;
+                minLatitude = location.latitude
             }
             
             if location.longitude < minLongitude {
-                minLongitude = location.longitude;
+                minLongitude = location.longitude
             }
             
             if location.latitude > maxLatitude {
-                maxLatitude = location.latitude;
+                maxLatitude = location.latitude
             }
             
             if location.longitude > maxLongitude {
-                maxLongitude = location.longitude;
+                maxLongitude = location.longitude
             }
         }
         
-        return CLLocationCoordinate2DMake(CLLocationDegrees((maxLatitude + minLatitude) * 0.5), CLLocationDegrees((maxLongitude + minLongitude) * 0.5));
+        let latitude = CLLocationDegrees((maxLatitude + minLatitude) * 0.5)
+        let longitude = CLLocationDegrees((maxLongitude + minLongitude) * 0.5)
+        
+        return CLLocationCoordinate2DMake(latitude, longitude)
     }
 }

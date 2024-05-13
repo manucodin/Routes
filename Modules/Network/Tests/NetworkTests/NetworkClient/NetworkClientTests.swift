@@ -26,7 +26,7 @@ final class NetworkClientTests: XCTestCase {
     }
     
     func testMakeRequestWithResponse() async throws {
-        MockerMock.mockTripList()
+        TripsMockerMock.mockTripList()
         
         do {
             let response: [TripDTO]? = try await sut.get(service: TripsAPIService.trips)
