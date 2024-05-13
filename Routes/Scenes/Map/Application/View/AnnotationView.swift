@@ -13,7 +13,7 @@ struct AnnotationView: View {
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 5)
-                .fill(Color.teal)
+                .fill(.annotationBackground)
             Image(systemName: icon)
                 .padding(5)
         }
