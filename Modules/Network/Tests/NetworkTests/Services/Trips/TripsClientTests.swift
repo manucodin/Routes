@@ -30,7 +30,7 @@ final class TripsClientTests: XCTestCase {
     }
 
     func testObtainTrips() async throws {
-        MockerMock.mockTripList()
+        TripsMockerMock.mockTripList()
         
         do {
             let response: [TripDTO] = try await sut.obtainTrips()

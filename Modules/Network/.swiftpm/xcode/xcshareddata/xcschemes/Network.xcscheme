@@ -33,6 +33,9 @@
             reference = "container:Tests/NetworkTests/Network.xctestplan"
             default = "YES">
          </TestPlanReference>
+         <TestPlanReference
+            reference = "container:../../Routes.xctestplan">
+         </TestPlanReference>
       </TestPlans>
    </TestAction>
    <LaunchAction

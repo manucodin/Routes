@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch_screen_icon" translatesAutoresizingMaskIntoConstraints="NO" id="Bv8-2Q-g44">
+                                <rect key="frame" x="96.666666666666686" y="304" width="200" height="244"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Bv8-2Q-g44" secondAttribute="height" multiplier="41:50" id="4Jb-to-M4E"/>
+                                    <constraint firstAttribute="width" constant="200" id="Y3P-xq-mUc"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Manuel Rodríguez" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HVq-mc-IEO">
+                                <rect key="frame" x="128" y="805.66666666666663" width="137.33333333333337" height="20.333333333333371"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Bcu-3y-fUS"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Bv8-2Q-g44" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="16W-OU-gO6"/>
+                            <constraint firstItem="HVq-mc-IEO" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Bmc-1a-G4G"/>
+                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="HVq-mc-IEO" secondAttribute="trailing" constant="16" id="ZZ8-Q2-u9G"/>
+                            <constraint firstItem="Bv8-2Q-g44" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="pgG-jB-Jkf"/>
+                            <constraint firstItem="HVq-mc-IEO" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Bcu-3y-fUS" secondAttribute="leading" constant="16" id="uHX-wO-uDN"/>
+                            <constraint firstItem="HVq-mc-IEO" firstAttribute="bottom" secondItem="Bcu-3y-fUS" secondAttribute="bottom" constant="8" id="xGf-dm-E6n"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="launch_screen_icon" width="203" height="250"/>
+    </resources>
+</document>

@@ -33,6 +33,9 @@
             reference = "container:Tests/UtilsTests/Utils.xctestplan"
             default = "YES">
          </TestPlanReference>
+         <TestPlanReference
+            reference = "container:../../Routes.xctestplan">
+         </TestPlanReference>
       </TestPlans>
       <Testables>
          <TestableReference
