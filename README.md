@@ -10,7 +10,7 @@ This project is an application for displaying routes along with information abou
 - Show stop info
 - Report issues and update app icon badge when a new issue is registered
 
-## Extra features
+## Extra features 🚀
 - 100% SwiftUI and Combine
 - Swift data
 - SPM Packages
