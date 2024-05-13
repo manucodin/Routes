@@ -11,6 +11,7 @@ public extension Date {
     func toFormat(_ format: String) -> String {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = format
+        dateFormatter.timeZone = TimeZone(identifier: "UTC+1")
         
         return dateFormatter.string(from: self)
     }
