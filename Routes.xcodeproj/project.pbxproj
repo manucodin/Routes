@@ -118,6 +118,7 @@
 		54B090502BF0CAA500CB3419 /* StopInfo+PreviewContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StopInfo+PreviewContent.swift"; sourceTree = "<group>"; };
 		54B090562BF0CC4B00CB3419 /* StopsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopsViewModel.swift; sourceTree = "<group>"; };
 		54B0905D2BF0DA8600CB3419 /* PillTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PillTextView.swift; sourceTree = "<group>"; };
+		54B3985A2BF2A7260094433A /* Routes.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = Routes.xctestplan; sourceTree = "<group>"; };
 		54E2EB292BF0A19E006363E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		54E2EB2B2BF0A1A3006363E9 /* Localizable.xcstrings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		54E2EB2E2BF0A1C8006363E9 /* TripsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripsView.swift; sourceTree = "<group>"; };
@@ -224,6 +225,7 @@
 		544B3C1F2BF0A0200017DE05 = {
 			isa = PBXGroup;
 			children = (
+				54B3985A2BF2A7260094433A /* Routes.xctestplan */,
 				544772992BF0A16F00E2385F /* Modules */,
 				544B3C2A2BF0A0200017DE05 /* Routes */,
 				544B3C3B2BF0A0210017DE05 /* RoutesTests */,

@@ -1,0 +1,57 @@
+{
+  "configurations" : [
+    {
+      "id" : "C363149C-5F1A-47FA-87CA-8EF3D0534933",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : {
+      "targets" : [
+        {
+          "containerPath" : "container:Modules\/Network",
+          "identifier" : "Network",
+          "name" : "Network"
+        },
+        {
+          "containerPath" : "container:Routes.xcodeproj",
+          "identifier" : "544B3C272BF0A0200017DE05",
+          "name" : "Routes"
+        },
+        {
+          "containerPath" : "container:Modules\/Utils",
+          "identifier" : "Utils",
+          "name" : "Utils"
+        }
+      ]
+    },
+    "testExecutionOrdering" : "random"
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:Modules\/Network",
+        "identifier" : "NetworkTests",
+        "name" : "NetworkTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:Modules\/Utils",
+        "identifier" : "UtilsTests",
+        "name" : "UtilsTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:Routes.xcodeproj",
+        "identifier" : "544B3C372BF0A0210017DE05",
+        "name" : "RoutesTests"
+      }
+    }
+  ],
+  "version" : 1
+}

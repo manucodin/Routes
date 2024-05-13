@@ -12,7 +12,7 @@ public class PhoneValidator: Validator {
     public init() {}
     
     public var regex: String {
-        return #"^(?:[0-9] ?){6,14}[0-9]$"#
+        return #"\+?(?:[0-9] ?){6,14}[0-9]$"#
     }
     
     public func validate(_ input: String) -> ValidatorError? {
