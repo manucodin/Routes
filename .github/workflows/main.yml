@@ -1,0 +1,21 @@
+name: Routes workflow
+
+on:
+  pull_request:
+
+jobs:
+  build:
+    name: Build and Test default scheme using any available iPhone simulator
+    runs-on: macos-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Build and Test
+        run: |
+          xcodebuild \
+           -project Routes \
+           -scheme Routes \
+           -sdk iphonesimulator \
+          -destination "platform=$platform,name=$device"
+           test || exit 1
